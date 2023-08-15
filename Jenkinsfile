@@ -4,23 +4,13 @@ pipeline
     agent any
     stages
     {
-        stage('Continous Downlod')
+        stage('Continous Downlod_loan')
         {
             steps
             {
                 script
                 {
                     cicd.download("maven")
-                }
-            }
-        }
-        stage('Continous Build')
-        {
-            steps
-            {
-                script
-                {
-                    cicd.build()
                 }
             }
         }
